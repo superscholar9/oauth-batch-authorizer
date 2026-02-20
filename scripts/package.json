@@ -1,0 +1,22 @@
+{
+  "name": "oauth-batch-authorizer",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "extract": "tsx src/main.ts extract",
+    "auth:dry": "tsx src/main.ts auth --dry-run",
+    "auth:run": "tsx src/main.ts auth",
+    "rotate:index": "tsx src/main.ts rotate-index",
+    "build": "tsc -p tsconfig.json",
+    "check": "tsc -p tsconfig.json --noEmit"
+  },
+  "dependencies": {
+    "playwright": "^1.52.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.15.3",
+    "tsx": "^4.19.4",
+    "typescript": "^5.8.3"
+  }
+}
